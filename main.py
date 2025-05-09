@@ -32,7 +32,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(message, parse_mode="Markdown", reply_markup=reply_markup)
 
 # ▶️ تشغيل البوت
-if __name__ == '__main__':
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
-    app.add_handler(CommandHandler("start", start))
-    app.run_polling()
+    if __name__ == '__main__':
+    print('Running the main application...')
+    # Add your main code logic here
